@@ -16,7 +16,7 @@
   <a href="https://linxuewu.github.io/BIP3D-page/" target="_blank" style="margin: 2px;">
     <img alt="Homepage" src="https://img.shields.io/badge/Homepage-BIP3D-green" style="display: inline-block; vertical-align: middle;"/>
   </a>
-  <a href="https://huggingface.co/xuewulin/BIP3D" target="_blank" style="margin: 2px;">
+  <a href="https://huggingface.co/HorizonRobotics/BIP3D" target="_blank" style="margin: 2px;">
     <img alt="Hugging Face" src="https://img.shields.io/badge/Models-Hugging%20Face-yellow" style="display: inline-block; vertical-align: middle;"/>
   </a>
   <a href="https://arxiv.org/abs/2411.14869" target="_blank" style="margin: 2px;">
