@@ -50,29 +50,29 @@ Op DAG denotes deformable aggregation, and DAT denotes 3D deformable attention. 
 The metric in the table is `AP@0.25`. For more metrics, please refer to the logs.
 |Model | Inputs | Op | Overall | Head | Common | Tail | Small | Medium | Large | ScanNet | 3RScan | MP3D | ckpt | log |
 |  :----  | :---: |  :---: | :---: |:---: | :---: | :---: | :---:| :---:|:---:|:---: | :---: | :----: | :----: | :---: |
-|[BIP3D](configs/bip3d_det_rgb.py) | RGB | DAG | 16.57|23.29|13.84|12.29|2.67|17.85|12.89|19.71|26.76|8.50   | - | - |
-|[BIP3D](configs/bip3d_det_rgb.py) | RGB | DAT | 16.67|22.41|14.19|13.18|3.32|17.25|14.89|20.80|24.18|9.91  | - | - |
-|[BIP3D](configs/bip3d_det.py) |RGB-D | DAG | 22.53|28.89|20.51|17.83|6.95|24.21|15.46|24.77|35.29|10.34  | - | - |
-|[BIP3D](configs/bip3d_det.py) |RGB-D | DAT | 23.24|31.51|20.20|17.62|7.31|24.09|15.82|26.35|36.29|11.44   | - | - |
+|[BIP3D](configs/bip3d_det_rgb.py) | RGB | DAG | 16.57|23.29|13.84|12.29|2.67|17.85|12.89|19.71|26.76|8.50   | - | [link](https://huggingface.co/HorizonRobotics/BIP3D/blob/main/det_rgb_dag/job.log) |
+|[BIP3D](configs/bip3d_det_rgb.py) | RGB | DAT | 16.67|22.41|14.19|13.18|3.32|17.25|14.89|20.80|24.18|9.91  | - | [link](https://huggingface.co/HorizonRobotics/BIP3D/blob/main/det_rgb_dat/job.log) |
+|[BIP3D](configs/bip3d_det.py) |RGB-D | DAG | 22.53|28.89|20.51|17.83|6.95|24.21|15.46|24.77|35.29|10.34  | - | [link](https://huggingface.co/HorizonRobotics/BIP3D/blob/main/det_rgbd_dag/job.log) |
+|[BIP3D](configs/bip3d_det.py) |RGB-D | DAT | 23.24|31.51|20.20|17.62|7.31|24.09|15.82|26.35|36.29|11.44   | - | [link](https://huggingface.co/HorizonRobotics/BIP3D/blob/main/det_rgbd_dat/job.log) |
 
 ### 2. Results on Multi-view 3D Grounding Mini Dataset
 To train and validate with mini dataset, set [`data_version="v1-mini"`](configs/bip3d_grounding.py#L333).
 |Model | Inputs | Op | Overall | Easy | Hard | View-dep | View-indep | ScanNet | 3RScan | MP3D | ckpt | log |
 |  :----  | :---: | :---: | :---: | :---: | :---:| :---:|:---:|:---: | :---: | :----: |:---: | :----: |
-|[BIP3D](configs/bip3d_grounding_rgb.py) | RGB | DAG | 44.00|44.39|39.56|46.05|42.92|48.62|42.47|36.40  | - | - |
-|[BIP3D](configs/bip3d_grounding_rgb.py) | RGB | DAT | 44.43|44.74|41.02|45.17|44.04|49.70|41.81|37.28  | - | - |
-|[BIP3D](configs/bip3d_grounding.py) | RGB-D | DAG | 45.79|46.22|40.91|45.93|45.71|48.94|46.61|37.36  | - | - |
-|[BIP3D](configs/bip3d_grounding.py) | RGB-D | DAT | 58.47|59.02|52.23|60.20|57.56|66.63|54.79|46.72  | - | - |
+|[BIP3D](configs/bip3d_grounding_rgb.py) | RGB | DAG | 44.00|44.39|39.56|46.05|42.92|48.62|42.47|36.40  | - | [link](https://huggingface.co/HorizonRobotics/BIP3D/blob/main/grounding_mini_rgb_dag/job.log) |
+|[BIP3D](configs/bip3d_grounding_rgb.py) | RGB | DAT | 44.43|44.74|41.02|45.17|44.04|49.70|41.81|37.28  | - | [link](https://huggingface.co/HorizonRobotics/BIP3D/blob/main/grounding_mini_rgb_dat/job.log) |
+|[BIP3D](configs/bip3d_grounding.py) | RGB-D | DAG | 45.79|46.22|40.91|45.93|45.71|48.94|46.61|37.36  | - | [link](https://huggingface.co/HorizonRobotics/BIP3D/blob/main/grounding_mini_rgbd_dag/job.log) |
+|[BIP3D](configs/bip3d_grounding.py) | RGB-D | DAT | 58.47|59.02|52.23|60.20|57.56|66.63|54.79|46.72  | - | [link](https://huggingface.co/HorizonRobotics/BIP3D/blob/main/grounding_mini_rgbd_dat/job.log) |
 
 
 ### 3. Results on Multi-view 3D Grounding Validation Dataset
 |Model | Inputs | Op | Mixed Data | Overall | Easy | Hard | View-dep | View-indep | ScanNet | 3RScan | MP3D | ckpt | log |
 |  :----  | :---: | :---: | :---: |:---: | :---: | :---:| :---:|:---:|:---: | :---: | :----: |:---: | :----: |
-|[BIP3D](configs/bip3d_grounding_rgb.py) | RGB | DAG |No| 45.81|46.21|41.34|47.07|45.09|50.40|47.53|32.97   | - | - |
-|[BIP3D](configs/bip3d_grounding_rgb.py) | RGB | DAT |No| 47.29|47.82|41.42|48.58|46.56|52.74|47.85|34.60   | - | - |
-|[BIP3D](configs/bip3d_grounding.py) | RGB-D | DAG |No| 53.75|53.87|52.43|55.21|52.93|60.05|54.92|38.20   | - | - |
-|[BIP3D](configs/bip3d_grounding.py) | RGB-D | DAT |No|61.36|61.88|55.58|62.43|60.76|66.96|62.75|46.92   | - | - |
-|[BIP3D](configs/bip3d_det_grounding.py) | RGB-D | DAT |Yes|66.58|66.99|62.07|67.95|65.81|72.43|68.26|51.14   | - | - |
+|[BIP3D](configs/bip3d_grounding_rgb.py) | RGB | DAG |No| 45.81|46.21|41.34|47.07|45.09|50.40|47.53|32.97   | - | [link](https://huggingface.co/HorizonRobotics/BIP3D/blob/main/grounding_rgb_dag/job.log) |
+|[BIP3D](configs/bip3d_grounding_rgb.py) | RGB | DAT |No| 47.29|47.82|41.42|48.58|46.56|52.74|47.85|34.60   | - | [link](https://huggingface.co/HorizonRobotics/BIP3D/blob/main/grounding_rgb_dat/job.log) |
+|[BIP3D](configs/bip3d_grounding.py) | RGB-D | DAG |No| 53.75|53.87|52.43|55.21|52.93|60.05|54.92|38.20   | - | [link](https://huggingface.co/HorizonRobotics/BIP3D/blob/main/grounding_rgbd_dag/job.log) |
+|[BIP3D](configs/bip3d_grounding.py) | RGB-D | DAT |No|61.36|61.88|55.58|62.43|60.76|66.96|62.75|46.92   | - | [link](https://huggingface.co/HorizonRobotics/BIP3D/blob/main/grounding_rgbd_dat/job.log) |
+|[BIP3D](configs/bip3d_det_grounding.py) | RGB-D | DAT |Yes|66.58|66.99|62.07|67.95|65.81|72.43|68.26|51.14   | - | [link](https://huggingface.co/HorizonRobotics/BIP3D/blob/main/grounding_rgbd_dat_mixdata/job.log) |
 
 
 ### 4. [Results on Multi-view 3D Grounding Test Dataset](https://huggingface.co/spaces/AGC2024/visual-grounding-2024)
