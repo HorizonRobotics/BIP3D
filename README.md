@@ -32,6 +32,8 @@
 
 **22/Nov/2024**: We release our paper to [Arxiv](https://arxiv.org/abs/2411.14869).
 
+## :open_book: Quick Start
+[Quick Start](docs/quick_start.md)
 
 ## Framework
 <div align="center">
