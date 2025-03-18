@@ -35,13 +35,13 @@
 ## :open_book: Quick Start
 [Quick Start](docs/quick_start.md)
 
-## Framework
+## :link: Framework
 <div align="center">
   <img src="https://github.com/HorizonRobotics/BIP3D/raw/main/resources/bip3d_structure.png" width="90%" alt="BIP3D" />
   <p style="font-size:0.8em; color:#555;">The Architecture Diagram of BIP3D, where the red stars indicate the parts that have been modified or added compared to the base model, GroundingDINO, and dashed lines indicate optional elements.</p>
 </div>
 
-## Results on EmbodiedScan Benchmark
+## :trophy: Results on EmbodiedScan Benchmark
 We made several improvements based on the original paper, achieving better 3D perception results. The main improvements include the following two points:
 1. **New Fusion Operation**: We enhanced the decoder by replacing the deformable aggregation (DAG) with a 3D deformable attention mechanism (DAT). Specifically, we improved the feature sampling process by transitioning from bilinear interpolation to trilinear interpolation, which leverages depth distribution for more accurate feature extraction.
 2. **Mixed Data Training**: To optimize the grounding model's performance, we adopted a mixed-data training strategy by integrating detection data with grounding data during the grounding finetuning process.
@@ -92,7 +92,7 @@ To train and validate with mini dataset, set [`data_version="v1-mini"`](configs/
 Our best model, BIP3D-B, is based on GroundingDINO-base and is trained with the addition ARKitScenes dataset.
 
 
-## Citation
+## :page_facing_up: Citation
 ```
 @article{lin2024bip3d,
   title={BIP3D: Bridging 2D Images and 3D Perception for Embodied Intelligence},
@@ -103,7 +103,7 @@ Our best model, BIP3D-B, is based on GroundingDINO-base and is trained with the 
 ```
 
 
-## Acknowledgement
+## :handshake: Acknowledgement
 [EmbodiedScan](https://github.com/OpenRobotLab/EmbodiedScan)
 
 [Sparse4D](https://github.com/HorizonRobotics/Sparse4D)
