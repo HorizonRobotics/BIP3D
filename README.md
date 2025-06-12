@@ -26,6 +26,8 @@
 
 
 ## :rocket: News
+**01/Jun/2025**: We have refactored and integrated the BIP3D code into [robo_orchard_lab](https://github.com/HorizonRobotics/robo_orchard_lab), removing the dependency on MM​​ series. The environment is now easier to set up, and the performance are improved. Welcome to try it out!
+
 **14/Mar/2025**: Our code has been released.
 
 **27/Feb/2025**: Our paper has been accepted by CVPR 2025.
